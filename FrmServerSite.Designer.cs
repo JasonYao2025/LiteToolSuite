@@ -41,84 +41,55 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 45);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "站点简称：";
             // 
             // tbSiteName
             // 
-            this.tbSiteName.Location = new System.Drawing.Point(151, 43);
+            resources.ApplyResources(this.tbSiteName, "tbSiteName");
             this.tbSiteName.Name = "tbSiteName";
-            this.tbSiteName.Size = new System.Drawing.Size(264, 21);
-            this.tbSiteName.TabIndex = 1;
             // 
             // tbSiteURL
             // 
-            this.tbSiteURL.Location = new System.Drawing.Point(151, 87);
+            resources.ApplyResources(this.tbSiteURL, "tbSiteURL");
             this.tbSiteURL.Name = "tbSiteURL";
-            this.tbSiteURL.Size = new System.Drawing.Size(264, 21);
-            this.tbSiteURL.TabIndex = 3;
-            this.tbSiteURL.Text = "https://";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 89);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "站点URL：";
             // 
             // btSaveSite
             // 
-            this.btSaveSite.Location = new System.Drawing.Point(200, 231);
+            resources.ApplyResources(this.btSaveSite, "btSaveSite");
             this.btSaveSite.Name = "btSaveSite";
-            this.btSaveSite.Size = new System.Drawing.Size(75, 23);
-            this.btSaveSite.TabIndex = 4;
-            this.btSaveSite.Text = "保存";
             this.btSaveSite.UseVisualStyleBackColor = true;
             this.btSaveSite.Click += new System.EventHandler(this.btSaveSite_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 173);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "密码：";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(78, 134);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "用户名：";
             // 
             // tbUserName
             // 
-            this.tbUserName.Location = new System.Drawing.Point(151, 132);
+            resources.ApplyResources(this.tbUserName, "tbUserName");
             this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(264, 21);
-            this.tbUserName.TabIndex = 7;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(151, 171);
+            resources.ApplyResources(this.tbPassword, "tbPassword");
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(264, 21);
-            this.tbPassword.TabIndex = 8;
             // 
             // FrmServerSite
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 306);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUserName);
             this.Controls.Add(this.label4);
@@ -128,12 +99,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbSiteName);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmServerSite";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "添加测试站点窗口";
             this.ResumeLayout(false);
             this.PerformLayout();
 

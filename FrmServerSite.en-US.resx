@@ -117,22 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Supported by JasonYao, Email: yaozhikui@hotmail.com</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Password:</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>About</value>
+    <value>Adding Site Window</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Toolkit---LiteToolSuite</value>
+    <value>Username:</value>
   </data>
-  <data name="labelVersion.Text" xml:space="preserve">
-    <value>Version: 0.1.0</value>
+  <data name="btSaveSite.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbSiteURL.Text" xml:space="preserve">
+    <value>https://</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>LiteToolSuite includes much small tools, which are useful for QA and FAE.</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>LiteToolSuite includes MQTT Sub, Time/Timestamp etc.</value>
+    <value>Site Name:</value>
   </data>
 </root>

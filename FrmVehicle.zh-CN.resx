@@ -405,4 +405,7 @@
         AAAAAAAAgAAAAAAAAACAAAAAAAAAAcAAAAAAAAAD//////////8=
 </value>
   </data>
+  <data name="btSearch.Text" xml:space="preserve">
+    <value>搜索</value>
+  </data>
 </root>

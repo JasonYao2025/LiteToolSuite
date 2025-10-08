@@ -144,14 +144,8 @@ namespace LiteToolSuite
             switch (btn.Tag) 
             {
                 case "0,0":
-                    if (LoginOperation.CheckToken(Token, Token_Get_Time)) //检查token是否还有效，超过30分钟重启登录窗口
-                    {
-                        
-                    }
-                    else
-                    {
-                        CallFrmLogin(); //调用登录窗口
-                    }
+                    FrmRename rename = new FrmRename();
+                    rename.ShowDialog();
                     return;
                 case "0,1":
                     if (LoginOperation.CheckToken(Token, Token_Get_Time))
@@ -175,16 +169,7 @@ namespace LiteToolSuite
                         CallFrmLogin();
                     }
                     return;
-                case "1,0":
-                    if (LoginOperation.CheckToken(Token, Token_Get_Time))
-                    {
-                       
-                    }
-                    else
-                    {
-                        CallFrmLogin();
-                    }
-                    
+                case "1,0":                    
                     return;
                 case "1,1":
 

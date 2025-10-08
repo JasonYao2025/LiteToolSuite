@@ -412,7 +412,7 @@
     <value>Sign In</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Mobile:</value>
+    <value>UserName:</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Sign In</value>

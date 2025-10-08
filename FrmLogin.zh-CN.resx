@@ -446,7 +446,7 @@
     <value>站点名：</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>手机号：</value>
+    <value>用户名：</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>密码：</value>
@@ -462,5 +462,8 @@
   </data>
   <data name="btRemoveSite.Text" xml:space="preserve">
     <value>删除站点</value>
+  </data>
+  <data name="btnLogin.Text" xml:space="preserve">
+    <value>登录</value>
   </data>
 </root>
