@@ -35,8 +35,8 @@ bld/
 [Ll]ogs/
 
 
-/.vs
-/packages
-/obj
-/bin
+/Src/.vs
+/Src/packages
+/Src/obj
+/Src/bin
 
