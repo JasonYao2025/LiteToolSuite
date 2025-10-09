@@ -1,4 +1,4 @@
-# LiteToolSuite [中文](https://github.com/walker0012025/API-TestPilot/blob/main/README.md) |English
+# LiteToolSuite [中文](https://github.com/JasonYao2025/LiteToolSuite/blob/main/Docs/README.md) |English
 
 ## 1. LiteToolSuite Overview
 
