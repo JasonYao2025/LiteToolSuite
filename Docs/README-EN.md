@@ -1,79 +1,77 @@
-# LiteToolSuite 中文 | [English](https://github.com/walker0012025/API-TestPilot/blob/main/EN-README.md) 
+# LiteToolSuite [中文](https://github.com/walker0012025/API-TestPilot/blob/main/README.md) |English
 
-### 🌟 LiteToolSuite 工具集简介
+## 1. LiteToolSuite Overview
 
-LiteToolSuite，中文名**小工具集**，由测试开发Jason开发的测试小工具的集合。旨在提供和硬件对接的工具，提升软件测试工程师硬件测试工作效率和帮助FAE现在快速处理问题和采集Log。
+LiteToolSuite (Chinese name: ‌**Mini Toolkit Set**‌) is a collection of testing utilities developed by Jason with technical support. Designed to facilitate device integration, it aims to enhance hardware testing efficiency for software engineers and enable FAEs to troubleshoot issues rapidly.
 
-### 🍓 LiteToolSuite 使用必读
-- 🔥 使用本项目，请注明出处。
-- 🔥 我的愿景：提升整个测试行业的技术水平。倘若您喜欢本项目，欢迎给予star支持。
-- 🔥 作者、贡献者及关联方不承担任何因使用本开源项目导致的直接或间接责任。
-- 🔥 禁止将本开源项目用于：违反法律法规或公序良俗的行为；侵害他人隐私、知识产权或其他合法权益；可能对人身、财产或环境造成危害的场景。
-  
-### 🎉 LiteToolSuite 发布历史
-- 🎁 2025.10.10 API-TestPilot 1.0 版本正式开源，正式上线。
+## 2. LiteToolSuite Usage Guidelines
 
-### 🚀 LiteToolSuite 达成目的
+- Acknowledge the project source when used.
+- ‌**Vision**‌: Empower testers to work effortlessly. If you find this project valuable, a star is greatly appreciated.
+- Authors, contributors, and affiliated parties assume no liability for direct or indirect damages caused by using this open-source project.
+- ‌**Prohibited uses**‌: Illegal activities, violation of public morals, infringement of privacy/IPR/other rights, or scenarios posing risks to persons/property/environment.
 
-主要是要达到以下几个方面：
+## 3. LiteToolSuite Release History
 
-1. 多语言框架，整体架构采用MVC来实现
-2. MQTT消息订阅和发布
-3. WebAPI调用示例
-4. 时间和时间戳计算
-5. 提供一系列的Helper方便进一步开发，包括SQLiteHelper
+- ‌**2025.10.10**‌: LiteToolSuite 1.0 officially opens source.
 
-窗体：注意是控件和对应事件的处理。
+## 4. LiteToolSuite Development Goals
 
-Models：实体类都放这个目录下，可以用于json文件的解析。比如下面的ProfileModel类。
+Originally conceived to enable MQTT command execution via Winform clicks for convenience, the toolkit later expanded to streamline testing workflows with:
 
-```
- profile = JsonConvert.DeserializeObject<ProfileModel>(response);
-```
+- [x] Multilingual framework based on MVC architecture.
+- [ ] MQTT message subscription/publishing.
+- [x] WebAPI invocation examples.
+- [x] Time/Timestamp calculations.
+- [x] Comprehensive Helpers (e.g., SQLiteHelper) for extended development.
 
-BLL: 此目录下存放所有的业务处理，比如获取站点所有的车辆，作为Dictionary返回。注意：简单数据类型可以作为全局变量被引用；而class和Dictionary好像不行，一开始过子窗口构造函数传值；后来仔细考虑过，还是在每个页面里面去请求数据。
+------
 
-Common：定义了很多的helper类，比如HttpClientHelper，LanguageHelper，LogHelper, RegexHelper, SecurityHelper, SQLiteHelper, StringHelper, TimeHelper, TencentCOSHelper。 方便窗体和BLL中的方法调用。
+‌**Note**‌:
 
-### 💡 LiteToolSuite 重点提醒
+- Technical terms like "MQTT", "Winform", and "MVC" retain their original forms as they are standardized acronyms.
+- Checkbox symbols ([x]/[ ]) are preserved for consistency with the original progress tracking format.
+- Legal disclaimers are translated with formal phrasing to maintain contractual rigor.
 
-LiteToolSuite只是一个客户端工具，需要服务器端提供服务才能调用成功。不同用户的服务器WebAPI不同，所以需要自行修改接口和返回的json数据格式。**解决办法**有：
+## 5. LiteToolSuite Architecture
 
-1、利用数据库修改API路径；
+LiteToolSuite follows the ‌**MVC architecture**‌, structured as follows:
 
-2、建立自己的实体类
+- ‌**Forms**‌: Contains UI, controls, and corresponding event handlers.
 
-3、有需要可以联系我
+- ‌**Models**‌: Hosts entity classes for JSON file parsing.
 
-### 👥 LiteToolSuite 贡献同学
+- ‌**BLL (Business Logic Layer)**‌: Implements core business logic (e.g., fetching site vehicles as a `Dictionary`).
 
-1、目前还只有我一个人，希望未来有更多的人参与。
+- ‌Common‌: Utility helpers like:`HttpClientHelper``LanguageHelper``RegexHelper``SecurityHelper``SQLiteHelper`
 
+  `StringHelper``TimeHelper`(Shared across Forms and BLL.)
 
+## 6. LiteToolSuite Contributors
 
-### 📌 LiteToolSuite 实操教程
+- Currently maintained solely by the author. Community contributions are welcome.
 
-使用VS2022可以打开编译。
+## 7. LiteToolSuite Quick Start Guide
 
-2、项目下载：请git clone https://github.com/walker0012025/API-TestPilot.git 。
+- ‌**Download‌**: git clone https://github.com/JasonYao2025/LiteToolSuite.git  
+- ‌**Open Project**‌: Use ‌**VS2022**‌ to load the solution.
+- ‌**Copy Files**: Copy `Docs/LiteToolSuite` and `Imgs` to the build directory.
+- ‌**Run**‌: Compile and launch via VS2022.
 
-3、进入项目：cd API-TestPilot。
+‌**Note**‌:
 
-### 📌 LiteToolSuite 使用教程
+- LiteToolSuite is a ‌**client-side tool**‌ requiring server-side WebAPI support.
+- Users must adapt APIs/JSON formats for their own servers by:
+  - Modifying API paths in code.
+  - Creating custom entity classes.
+  - Contacting the author if needed.
 
-1、项目下载：请git clone https://github.com/walker0012025/API-TestPilot.git 。
+------
 
-2、进入项目：cd API-TestPilot/api。
+‌**Key Terms Retained**‌:
 
-3、安装依赖：pip install -r requirements.txt。
+- MVC, BLL, JSON, WebAPI, VS2022 (standard technical terms).
+- Code blocks and paths are preserved verbatim.
+- Structured formatting (bullets, bolding) aligns with the original.
 
-4、生成用例：执行client.py。
-
-### 🙏 引用
-```bibtex
-
-```
-
-
-
-
+Let me know if you'd like any refinements!
