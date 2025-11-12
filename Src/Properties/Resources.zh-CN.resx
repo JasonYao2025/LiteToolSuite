@@ -150,4 +150,7 @@
   <data name="Feature6" xml:space="preserve">
     <value>登录后端站点</value>
   </data>
+  <data name="Feature7" xml:space="preserve">
+    <value>输出测试内容生成</value>
+  </data>
 </root>

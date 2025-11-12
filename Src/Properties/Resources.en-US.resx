@@ -150,4 +150,7 @@
   <data name="Feature6" xml:space="preserve">
     <value>Sign in Backend Site</value>
   </data>
+  <data name="Feature7" xml:space="preserve">
+    <value>Input Text</value>
+  </data>
 </root>

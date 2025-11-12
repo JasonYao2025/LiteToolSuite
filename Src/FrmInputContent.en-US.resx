@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,48 +112,54 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PopMessage" xml:space="preserve">
-    <value>这个是简体中文！</value>
+  <data name="cbLowerChar.Text" xml:space="preserve">
+    <value>LowerCase</value>
   </data>
-  <data name="Feature1" xml:space="preserve">
-    <value>MQTT消息</value>
+  <data name="cbNumber.Text" xml:space="preserve">
+    <value>Number</value>
   </data>
-  <data name="Feature2" xml:space="preserve">
-    <value>车辆查看</value>
+  <data name="cbUpperChar.Text" xml:space="preserve">
+    <value>UpperCase</value>
   </data>
-  <data name="Feature3" xml:space="preserve">
-    <value>文件改名</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Chars</value>
   </data>
-  <data name="Feature4" xml:space="preserve">
-    <value>时间/时间戳</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Including:</value>
   </data>
-  <data name="Feature5" xml:space="preserve">
-    <value>关于</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Length:</value>
   </data>
-  <data name="Feature7" xml:space="preserve">
-    <value>输出测试内容生成</value>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Reset</value>
   </data>
-  <data name="Feature8" xml:space="preserve">
-    <value></value>
+  <data name="btnCpToClipboard.Text" xml:space="preserve">
+    <value>Copy</value>
   </data>
-  <data name="Feature9" xml:space="preserve">
-    <value>退出程序</value>
+  <data name="btnGenerate.Text" xml:space="preserve">
+    <value>Generate</value>
   </data>
-  <data name="PhoneNumberPrompt" xml:space="preserve">
-    <value>请输入11位手机号码</value>
+  <data name="btnHTML.Text" xml:space="preserve">
+    <value>Generate HTML</value>
   </data>
-  <data name="SearchTextPrompt" xml:space="preserve">
-    <value>请输入搜索内容</value>
+  <data name="cbOtherChar.Text" xml:space="preserve">
+    <value>OtherChars</value>
   </data>
-  <data name="MessageBoxCapInformation" xml:space="preserve">
-    <value>提示</value>
+  <data name="cbSpecialChar.Text" xml:space="preserve">
+    <value>SpecialChars</value>
   </data>
-  <data name="Feature6" xml:space="preserve">
-    <value>登录后端站点</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Setting for Inputting Testing</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Content for Inputting Testing</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Window for Generating Inputting Testing Content </value>
   </data>
 </root>

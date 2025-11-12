@@ -115,7 +115,7 @@ namespace LiteToolSuite.Properties {
         }
         
         /// <summary>
-        ///   查找类似  的本地化字符串。
+        ///   查找类似 输出测试内容生成 的本地化字符串。
         /// </summary>
         internal static string Feature7 {
             get {

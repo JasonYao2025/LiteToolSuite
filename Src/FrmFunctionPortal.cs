@@ -171,7 +171,9 @@ namespace LiteToolSuite
                     frmLogin = new FrmLogin();
                     frmLogin.ShowDialog();
                     return;
-                case "2,0":                    
+                case "2,0": 
+                    FrmInputContent inputContent = new FrmInputContent();
+                    inputContent.ShowDialog();
                     return;
                 case "2,1":                   
                     return;

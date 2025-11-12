@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\InputOperation.cs" />
     <Compile Include="BLL\LoginOperation.cs" />
     <Compile Include="BLL\MqttOperation.cs" />
     <Compile Include="BLL\ProfileOperation.cs" />
@@ -119,6 +120,12 @@
     </Compile>
     <Compile Include="FrmFunctionPortal.Designer.cs">
       <DependentUpon>FrmFunctionPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputContent.Designer.cs">
+      <DependentUpon>FrmInputContent.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -198,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFunctionPortal.zh-CN.resx">
       <DependentUpon>FrmFunctionPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputContent.en-US.resx">
+      <DependentUpon>FrmInputContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputContent.resx">
+      <DependentUpon>FrmInputContent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.en-US.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
